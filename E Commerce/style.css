@@ -1,0 +1,218 @@
+body{
+    background: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 0;
+  }
+  a{
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+.hero-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(Images/pexels-andre-moura-2562992.jpg);
+    background-size: cover;
+    background-position-x: 20%;
+    background-position-y: 20%;
+    z-index: -1;
+   
+  }
+.logo{
+    color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+ 
+  }
+  span{
+    color: red;
+ 
+  }
+header{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    
+
+    }   
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+    }  
+.close{
+    float: right;
+    margin: 2em;
+    width: 2em;
+        }  
+
+a{
+   color: black;
+   padding: .75em 2em;
+   display: block;
+   width: 100%;
+    }  
+ul a:hover{
+        background: rgb(160, 161, 160);
+         }  
+     
+h1{
+  font-size: 3rem;
+  margin-top: 2em;
+  line-height: 3.3rem;
+
+  }  
+
+.subhead{
+    font-size: 1.4rem;
+    }   
+
+.hero {
+    height: 90vh;
+    color: white;
+    margin-left: 2rem;
+    
+    }   
+.arrow{
+    stroke: white;
+    position: absolute;
+    bottom: 2em;
+    background: rgb(228, 93, 3);
+    width: 4em;
+    margin: 2em;
+    border-radius: 0.7em;
+    
+    }
+.info img{
+       width: 100%;
+       object-fit: cover;
+       height: 11em;
+       border: solid .5px rgb(228, 93, 3);
+       border-radius: 0.5em;
+       align-items: center;
+      
+ } 
+
+.info .title{
+    font-weight: bold; 
+     
+       
+  }  
+  
+
+.info .description{
+     line-height: 1.5rem;
+     
+ } 
+ .menu{
+    margin-left: 5em;
+    height: 40px;
+  
+} 
+@media only screen and 
+ (min-width: 680px){
+    body{
+        background: rgb(255, 255, 255);
+        margin: 0rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+      }
+}
+@media only screen and 
+ (min-width: 920px){
+    body{
+        background: rgb(255, 255, 255);
+        margin: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+      }
+    .menu{
+       display: none;
+      }
+      nav{
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+
+       }
+       .close{
+        display: none;
+       }
+       ul{
+        display: flex;
+        margin: 0;
+       }
+       a{
+        color: white;
+        padding: .5em 1.5em;
+        font-size: .9rem;
+       }
+       
+       nav a:hover{
+        background: none;
+        text-decoration: underline;
+       }
+      .hero-img{
+        left: unset;
+        right: 0;
+        width: 50%;
+        height: 40vh;
+       }
+       .hero-img{
+        left: unset;
+        right: 0;
+        width: 50%;
+        height: 42em;
+       }
+       .logo{
+        color: black;
+       }
+       .logo span{
+        color: red;
+       }
+       .hero{
+        color: black;
+        height: auto;
+        width: 40%;
+        margin-bottom: 8em;
+       }
+       .feature{
+       display: grid;
+       grid-template-columns: repeat(2, auto);
+       gap: 3em;
+       margin:  20em 0;
+       
+      }
+      .feature img{
+       width: 25em;
+       }
+       .content{
+        text-align: left;
+        }
+        .info img{
+          width: 100%;
+          object-fit: cover;
+          height: 11em;
+          border: solid .5px rgb(228, 93, 3);
+          border-radius: 0.5em;
+          align-items: center;
+         
+    } 
+}
